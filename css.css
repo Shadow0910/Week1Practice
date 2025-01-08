@@ -1,0 +1,56 @@
+@font-face {
+    font-family: GoodFont;
+    src: url(CafeDeParisSans-BWwJx.ttf);
+}
+  
+body {margin: 0;
+font-family:GoodFont;}
+
+header {
+    background-color: #FFDCE4;
+    color: #331F40;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    z-index: 20;
+    border-radius: 20px;
+    padding: 30px;
+}   
+
+down {
+    background-color: #FFDCE4;
+    color: #331F40;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding-left: 100%;
+    z-index: 20;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+#bgvid {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#vignette {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 200px rgba(0,0,0,1) inset;
+}  
+
+a:link {color: rgb(89, 0, 255);
+    text-shadow: 2px;
+    font-family: GoodFont;
+}
+
+a:visited {
+    color: rgb(89, 0, 255);
+    font-family: GoodFont;
+}
