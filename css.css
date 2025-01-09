@@ -1,32 +1,97 @@
+.LeftInDoor {
+    background: black;
+    color: #6A2473;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    position: inherit;
+    animation-name:leftdoor;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    padding: 50%;
+    z-index: 100;
+}
+
+.RightInDoor {
+    background: black;
+    color: #6A2473;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    text-align: left;
+    position:end;
+    animation-name:rightdoor;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    z-index: 100;
+}
+
+@keyframes leftdoor {
+    from {left: 0%;}
+    to {left: -50%;}
+}
+
+
+
+
+
+
+
 @font-face {
     font-family: GoodFont;
     src: url(CafeDeParisSans-BWwJx.ttf);
 }
   
 body {margin: 0;
-font-family:GoodFont;}
+font-family:GoodFont;
+}
 
-header {
-    background-color: #FFDCE4;
-    color: #331F40;
-    width: 100%;
+#header {
+    background-color: #6A2473;
+    color: #FFDCE4;
+    width: 75%;
     height: 20%;
-    text-align: center;
-    z-index: 20;
     border-radius: 20px;
-    padding: 30px;
+    left: 12.5%;
+    padding: 1%;
+    text-align:justify;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.74);
 }   
 
-down {
-    background-color: #FFDCE4;
-    color: #331F40;
-    width: 100%;
+#content {
+    background: rgba(0, 0, 0, 0.60);
+    color: #FFDCE4;
+    width: 57%;
+    height: 25%;
+    position: relative;
+    border-radius: 20px;
+    left: 12.5%;
+    padding: 10%;
+    margin-top: 7%;
+    text-align: center;
+}
+
+
+
+#down {
+    background-color: #6A2473;
+    color: #FFDCE4;
+    width: 75%;
     height: 20%;
     text-align: center;
-    padding-left: 100%;
-    z-index: 20;
+    position: relative;
     border-radius: 20px;
-    padding: 30px;
+    left: 12.5%;
+    padding: 1%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.74);
+    display: flex;
+    justify-content: space-around;
 }
 
 #bgvid {
