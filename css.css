@@ -78,6 +78,23 @@ body {
     text-align: justify;
     position: relative;
     display: flex;
+    padding-top: 0%;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.74);
+    transition: 1s;
+}
+#header:hover {
+    background-color: #6A2473;
+    color: #FFDCE4;
+    width: 75%;
+    height: 20%;
+    border-radius: 20px;
+    left: 12.5%;
+    padding: 1%;
+    padding-top: 10%;
+    text-align: justify;
+    position: relative;
+    display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.74);
 }
@@ -93,6 +110,59 @@ body {
     padding: 10%;
     margin-top: 7%;
     text-align: center;
+    
+}
+
+#content2 {
+    background: rgba(0, 0, 0, 0.60);
+    color: #FFDCE4;
+    width: 67%;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    left: 7.5%;
+    padding: 10%;
+    margin-top: 7%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items to the top */
+}
+
+#content2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+#content2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.74);
+    margin: 1%;
+    padding: 1%;
+}
+
+#content2 h3 {
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+button {
+    background-color: #6A2473;
+    color: #FFDCE4;
+    width: 75%;
+    height: 20%;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    left: 12.5%;
+    padding: 1%;
+    margin-top: 5%;
+    background: rgba(0, 0, 0, 0.74);
 }
 
 #down {
@@ -131,6 +201,7 @@ a:link {
     color: rgb(89, 0, 255);
     text-shadow: 2px;
     font-family: GoodFont;
+    text-decoration: none;
 }
 
 a:visited {
