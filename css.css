@@ -1,16 +1,29 @@
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    animation: slideUp 8s forwards; /* Adjusted duration */
+}
+
 .LeftInDoor {
     background: black;
     color: #6A2473;
     width: 50%;
     height: 100%;
-    text-align: right;
-    position: inherit;
-    animation-name:leftdoor;
+    position: absolute;
+    left: 0;
+    animation-name: leftdoor;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    padding: 50%;
-    z-index: 100;
+    text-align: end;
+    font-size: xx-large;
 }
 
 .RightInDoor {
@@ -18,34 +31,40 @@
     color: #6A2473;
     width: 50%;
     height: 100%;
-    left: 50%;
-    text-align: left;
-    position:end;
-    animation-name:rightdoor;
+    position: absolute;
+    right: 0;
+    animation-name: rightdoor;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    z-index: 100;
+    text-align: start;
+    font-size: xx-large;
 }
 
 @keyframes leftdoor {
-    from {left: 0%;}
-    to {left: -50%;}
+    from { left: 0; }
+    to { left: -50%; }
 }
 
+@keyframes rightdoor {
+    from { right: 0; }
+    to { right: -50%; }
+}
 
-
-
-
-
+@keyframes slideUp {
+    0% { top: 0; }
+    50% { top: 0; } /* Wait for doors to slide out */
+    100% { top: -100%; }
+}
 
 @font-face {
     font-family: GoodFont;
     src: url(CafeDeParisSans-BWwJx.ttf);
 }
-  
-body {margin: 0;
-font-family:GoodFont;
+
+body {
+    margin: 0;
+    font-family: GoodFont;
 }
 
 #header {
@@ -56,12 +75,12 @@ font-family:GoodFont;
     border-radius: 20px;
     left: 12.5%;
     padding: 1%;
-    text-align:justify;
+    text-align: justify;
     position: relative;
     display: flex;
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.74);
-}   
+}
 
 #content {
     background: rgba(0, 0, 0, 0.60);
@@ -75,8 +94,6 @@ font-family:GoodFont;
     margin-top: 7%;
     text-align: center;
 }
-
-
 
 #down {
     background-color: #6A2473;
@@ -104,13 +121,14 @@ font-family:GoodFont;
 #vignette {
     position: fixed;
     top: 0;
-    left: 0;    
+    left: 0;
     width: 100%;
     height: 100%;
     box-shadow: 0 0 200px rgba(0,0,0,1) inset;
-}  
+}
 
-a:link {color: rgb(89, 0, 255);
+a:link {
+    color: rgb(89, 0, 255);
     text-shadow: 2px;
     font-family: GoodFont;
 }
