@@ -6,9 +6,9 @@
     height: 100%;
     z-index: 9999;
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
-    animation: slideUp 8s forwards; /* Adjusted duration */
+    align-items: center;
+    justify-content: center;
+    animation: slideUp 7s forwards;
 }
 
 .LeftInDoor {
@@ -20,7 +20,7 @@
     left: 0;
     animation-name: leftdoor;
     animation-delay: 2s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     text-align: end;
     font-size: xx-large;
@@ -35,7 +35,7 @@
     right: 0;
     animation-name: rightdoor;
     animation-delay: 2s;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     text-align: start;
     font-size: xx-large;
@@ -53,7 +53,7 @@
 
 @keyframes slideUp {
     0% { top: 0; }
-    50% { top: 0; } /* Wait for doors to slide out */
+    50% { top: 0; }
     100% { top: -100%; }
 }
 
@@ -83,21 +83,6 @@ body {
     background: rgba(0, 0, 0, 0.74);
     transition: 1s;
 }
-#header:hover {
-    background-color: #6A2473;
-    color: #FFDCE4;
-    width: 75%;
-    height: 20%;
-    border-radius: 20px;
-    left: 12.5%;
-    padding: 1%;
-    padding-top: 10%;
-    text-align: justify;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    background: rgba(0, 0, 0, 0.74);
-}
 
 #content {
     background: rgba(0, 0, 0, 0.60);
@@ -110,7 +95,6 @@ body {
     padding: 10%;
     margin-top: 7%;
     text-align: center;
-    
 }
 
 #content2 {
@@ -126,7 +110,7 @@ body {
     text-align: center;
     display: flex;
     justify-content: space-around;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
 }
 
 #content2 div {
@@ -207,4 +191,63 @@ a:link {
 a:visited {
     color: rgb(89, 0, 255);
     font-family: GoodFont;
+}
+
+#content3 {
+    background: rgba(0, 0, 0, 0.60);
+    color: #FFDCE4;
+    width: 67%;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+    left: 17.5%;
+    text-shadow: 1% black;
+    margin-top: 7%;
+    text-align: center;
+    display: grid;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: larger;
+}
+
+#vap{
+    height: auto;
+    width: 25%;
+}
+
+#IFrame {
+    width: 600px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+#Cookies {
+    background-color: #6A2473;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    width: 80%;
+    height: auto;
+}
+
+#Cookies img {
+padding: 10px;
+}
+
+#content4 {
+    background: rgba(0, 0, 0, 0.60);
+    color: #FFDCE4;
+    width: 57%;
+    height: 25%;
+    position: relative;
+    border-radius: 20px;
+    left: 12.5%;
+    padding: 10%;
+    margin-top: 7%;
+    text-align: center;
+    font-size: larger;
+}
+#kontakt {
+    width: 90%;
+    height: auto;
 }
